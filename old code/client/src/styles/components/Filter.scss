@@ -1,0 +1,51 @@
+@import "../base/variables.scss";
+
+.filter {
+  text-align: right;
+  animation: left-to-right .4s ease;
+  
+  @keyframes left-to-right {
+    0%   { transform: translateX(-100px); opacity: 0 }
+    100% { transform: translateX(0     ); opacity: 1 }
+  }
+
+  &__header {
+    position: relative;
+    margin: 0;
+    margin-bottom: 12px;
+    padding-right: 30px;
+    font-size: 19px;
+    line-height: 1;
+    color: $blue;
+
+    i {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-45%);
+    }
+  }
+
+  &__list {
+
+  }
+
+  &__item {
+
+  }
+
+  &__link {
+    font-size: 13px;
+    line-height: 24px;
+    color: #6b7072;
+    transition: .5s;
+
+    &:hover {
+      color: lighten(#6b7072, 15%);
+    }
+  }
+
+  &__link--selected {
+    color: #fff;
+  }
+}

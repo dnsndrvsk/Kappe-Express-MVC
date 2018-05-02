@@ -1,0 +1,26 @@
+@import "../base/variables.scss";
+
+.aside-post {
+  background-color: $blue;
+  padding-left: 16px;
+
+  &__inner-wrap {
+    padding: 26px;
+    background-color: #242b2e;
+  }
+
+  &__header {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 21px;
+    line-height: 26px;
+    color: $grey-l;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: $grey;
+  }
+}

@@ -1,0 +1,32 @@
+.comments-box__comment {
+  position: relative;
+  min-height: 80px;
+  margin-bottom: 30px;
+  padding-left: 104px; }
+  .comments-box__comment:last-child {
+    margin-bottom: 0; }
+
+.comments-box__header {
+  display: table;
+  margin: 0;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  border-bottom: solid 1px #e3e3e3; }
+
+.comments-box__text {
+  margin: 0;
+  line-height: 18px; }
+
+.comments-box__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  overflow: hidden; }
+
+.comments-box__img {
+  display: block;
+  width: 100%; }

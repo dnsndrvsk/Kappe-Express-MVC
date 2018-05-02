@@ -1,0 +1,28 @@
+.services__header {
+  margin: 0;
+  margin-bottom: 20px; }
+
+.services__item {
+  position: relative;
+  margin-bottom: 18px;
+  padding-left: 12px; }
+  .services__item:last-child {
+    margin-bottom: 0; }
+  .services__item:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #a3a3a3; }
+
+.services__link {
+  font-size: 14px;
+  line-height: 100%;
+  color: #a3a3a3;
+  transition: color .4s ease; }
+  .services__link:hover {
+    color: #111;
+    text-decoration: underline; }

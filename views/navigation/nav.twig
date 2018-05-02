@@ -1,0 +1,43 @@
+{% set links = [
+  { to: '/',         text: 'Home'     },
+  { to: '/about',    text: 'About'    },
+  { to: '/blog',     text: 'Blog'     },
+  { to: '/services', text: 'Services' },
+  { to: '/contact',  text: 'Contact'  },
+  { to: '/updates',  text: 'Updates'  }
+] %}
+
+
+
+{% block headernav %}
+  <header class="main-header">
+    <div class="main-header__logo">
+      <img src="/img/logo.png" alt="Kappe" />
+    </div>
+
+    <nav class="main-header__nav">
+      <ul class="main-header__nav-list">
+        {% for link in links %}
+          <li class="main-header__nav-item">
+            <a
+              class="main-header__nav-link {% if active == link.text %}main-header__nav-link--active{% endif %}"
+              href={{link.to}}
+            >
+              {{link.text}}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+
+    {% if active == 'Home' %}
+      {% include '../partials/filter.twig' %}
+    {% endif %}
+
+    {% include '../partials/social-links.twig' %}
+
+    <p class="main-header__copyright">
+      © 2014 Kappe, All Rights Reserved
+    </p>
+  </header>
+{% endblock %}

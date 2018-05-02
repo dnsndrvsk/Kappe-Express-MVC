@@ -1,0 +1,51 @@
+.common-post__image {
+  display: block;
+  width: 100%; }
+
+.common-post__video {
+  display: block;
+  width: 100%; }
+
+.common-post__info {
+  padding: 20px;
+  border-bottom: solid 1px #e3e3e3; }
+
+.common-post__header {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 26px; }
+  .common-post__header a {
+    color: #000;
+    font-weight: 300; }
+    .common-post__header a:hover {
+      text-decoration: underline; }
+
+.common-post__text {
+  margin: 0;
+  font-size: 13px;
+  line-height: 22px; }
+
+.common-post__bottom {
+  padding: 20px; }
+
+.common-post__comments, .common-post__date {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  padding-left: 22px;
+  font-size: 13px;
+  color: #a3a3a3; }
+  .common-post__comments:last-child, .common-post__date:last-child {
+    margin-right: 0; }
+  .common-post__comments i, .common-post__date i {
+    position: absolute;
+    color: #7d7d7d; }
+
+.common-post__comments i {
+  left: 0;
+  top: 0; }
+
+.common-post__date i {
+  left: 0; }

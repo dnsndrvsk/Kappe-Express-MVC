@@ -1,0 +1,17 @@
+.aside-post {
+  background-color: #1ab5b3;
+  padding-left: 16px; }
+  .aside-post__inner-wrap {
+    padding: 26px;
+    background-color: #242b2e; }
+  .aside-post__header {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 21px;
+    line-height: 26px;
+    color: #e3e3e3; }
+  .aside-post__text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: #a3a3a3; }

@@ -1,0 +1,60 @@
+@import "../base/variables.scss";
+@import "react-tabs.scss";
+
+.why-us {
+  
+  &__header {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  
+  &__title,
+  &__text {
+    margin: 0;
+  }
+  
+  &__title {
+    text-transform: uppercase;
+    
+    @media screen and (max-width: 750px) {
+      font-size: 20px;
+    }
+  }
+  
+  
+  
+  .react-tabs {
+    
+    &__tab-list {
+      margin: 0;
+      border: none;
+    }
+    
+    &__tab {
+      margin-right: 5px;
+      padding: 20px;
+      border: none;
+      border-radius: 0;
+      background-color: rgba($grey-l, .5);
+      transition: all .7s ease-out;
+      
+      &:last-child {
+        margin-right: 0;
+      }
+      
+      &--selected {
+        border: none;
+        background-color: $blue;
+        
+        * {
+          color: #fff;
+        }
+      }
+    }
+    
+    &__tab-panel {
+      padding: 30px;
+      border: solid 1px $grey-l;
+    }
+  }
+}

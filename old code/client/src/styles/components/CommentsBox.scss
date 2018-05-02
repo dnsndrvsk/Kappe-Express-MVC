@@ -1,0 +1,44 @@
+@import "../base/variables.scss";
+
+.comments-box {
+  
+  &__comment {
+    position: relative;
+    min-height: 80px;
+    margin-bottom: 30px;
+    padding-left: 104px;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  &__header {
+    display: table;
+    margin: 0;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: solid 1px $grey-l;
+  }
+  
+  &__text {
+    margin: 0;
+    line-height: 18px;
+  }
+  
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+  }
+  
+  &__img {
+    display: block;
+    width: 100%;
+  }
+}

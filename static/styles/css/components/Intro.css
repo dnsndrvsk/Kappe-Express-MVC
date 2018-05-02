@@ -1,0 +1,17 @@
+.team__image {
+  margin-bottom: 20px; }
+
+.team__img {
+  display: block;
+  width: 100%; }
+
+.team__header {
+  margin: 0;
+  margin-bottom: 20px; }
+
+.team__text {
+  margin: 0;
+  margin-bottom: 44px; }
+
+.team__text:last-child {
+  margin-bottom: 0; }

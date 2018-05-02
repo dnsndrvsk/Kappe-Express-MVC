@@ -1,0 +1,25 @@
+<div class="comments-box">
+  <div class="comments-box__comments-wrap">
+    {% if comments %}
+      {% for comment in comments %}
+        <div class="comments-box__comment">
+          <h2 class="comments-box__header">
+            {{comment.author}}
+          </h2>
+          <p class="comments-box__text">
+            {{comment.text}}
+          </p>
+          <div class="comments-box__image">
+            <img
+              class="comments-box__img"
+              src="{% if comment.image %} comment.image {% else %} /img/user.png {% endif %}"
+              alt="{% if comment.author %} comment.author {% else %} Admin {% endif %}"
+            />
+          </div>
+        </div>
+      {% endfor %}
+    {% else %}
+    <div>No comments yet.</div>
+    {% endif %}
+  </div>
+</div>

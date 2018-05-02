@@ -1,0 +1,17 @@
+.home-page {
+  animation: show-page .4s ease; }
+  .home-page__item {
+    position: relative;
+    float: left;
+    width: 25%;
+    max-height: 300px;
+    overflow: hidden; }
+    @media (max-width: 1240px) {
+      .home-page__item {
+        width: 33.33333%; } }
+    @media (max-width: 768px) {
+      .home-page__item {
+        width: 50%; } }
+    @media (max-width: 480px) {
+      .home-page__item {
+        width: 100%; } }

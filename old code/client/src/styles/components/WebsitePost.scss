@@ -1,0 +1,23 @@
+@import "../base/variables.scss";
+
+.web-post {
+  background-color: $blue;
+  text-align: center;
+
+  &__inner-wrap {
+    padding: 40px 34px;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 10px;
+    line-height: 20px;
+    color: #fff;
+  }
+
+  &__link {
+    font-style: italic;
+    color: #fff;
+    text-decoration: underline;
+  }
+}

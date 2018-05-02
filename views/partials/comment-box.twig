@@ -1,0 +1,79 @@
+{% set inputs = [
+  {
+    type: 'text',
+    icon: 'fa-user',
+    placeholder: 'Name',
+    isRequired: true,
+    value: 'author',
+    name: 'author'
+  },
+  {
+    type: 'email',
+    icon: 'fa-envelope-o',
+    placeholder: 'E-mail',
+    isRequired: false,
+    value: 'email',
+    name: 'email'
+  },
+  {
+    type: 'url',
+    icon: 'fa-link',
+    placeholder: 'Website',
+    isRequired: false,
+    value: 'website',
+    name: 'website'
+  }
+] %}
+ 
+
+<div class="comments-box__form-wrap">
+  <div class="message-box">
+    <h3 class="message-box__header">
+      {{data.header}}
+    </h3>
+    <div class="message-box__form-wrap cf">
+      <form action="/sendcomment" method="post">
+        <div class="message-box__col-left">
+          {% for input in inputs %}
+            <div class="message-box__input-field">
+              <label>
+                <input
+                  type={{input.type}}
+                  class="message-box__input"
+                  placeholder={{input.placeholder}}
+                  name={{input.name}}
+                  {% if input.isRequired %} required {% endif %}
+                />
+                <div class="message-box__icon-wrap">
+                  <i class="message-box__icon fa {{input.icon}}"></i>
+                </div>
+              </label>
+            </div>
+          {% endfor %}
+        </div>
+
+        <div class="message-box__col-right">
+          <div class="message-box__textarea-wrap">
+            <textarea
+              class="message-box__textarea"
+              name="text"
+              id=""
+              cols="30"
+              rows="4"
+              placeholder="Message"
+              required
+            >
+            </textarea>
+          </div>
+          <div class="message-box__btn-wrap">
+            <input
+              class="message-box__btn button"
+              type="submit"
+              value={{data.buttonText}}
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

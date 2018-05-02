@@ -1,0 +1,33 @@
+.filter {
+  text-align: right;
+  animation: left-to-right .4s ease; }
+
+@keyframes left-to-right {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+  .filter__header {
+    position: relative;
+    margin: 0;
+    margin-bottom: 12px;
+    padding-right: 30px;
+    font-size: 19px;
+    line-height: 1;
+    color: #1ab5b3; }
+    .filter__header i {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-45%); }
+  .filter__link {
+    font-size: 13px;
+    line-height: 24px;
+    color: #6b7072;
+    transition: .5s; }
+    .filter__link:hover {
+      color: #919698; }
+  .filter__link--selected {
+    color: #fff; }

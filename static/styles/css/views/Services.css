@@ -1,0 +1,19 @@
+.services-page {
+  padding: 24px;
+  animation: show-page .4s ease; }
+  .services-page__wrap-inner {
+    padding: 24px;
+    background-color: #fff; }
+  .services-page__header {
+    margin: 0;
+    margin-bottom: 10px; }
+  .services-page__text {
+    margin: 0;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: solid 1px #e3e3e3; }
+  .services-page .services-list {
+    margin-bottom: 50px;
+    border-bottom: solid 1px #e3e3e3; }
+  .services-page .why-us {
+    margin-bottom: 30px; }

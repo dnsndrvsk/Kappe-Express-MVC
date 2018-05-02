@@ -1,0 +1,22 @@
+//color
+$blue: #1ab5b3;
+$grey: #a3a3a3;
+$grey-l: lighten($grey, 25%);
+$grey-d: darken($grey, 15%);
+
+//gradient
+$grad-blue: linear-gradient(to bottom, 
+                            lighten($blue, 15%),
+                            darken($blue,  15%));
+
+$grad-blue-l: linear-gradient(to bottom, 
+                            lighten($blue, 10%),
+                            darken($blue,  10%));
+
+$grad-dark: linear-gradient(to bottom, 
+                            lighten(#2f373b, 1%),
+                            darken(#2f373b,  1%));
+
+//font-weight
+$w-light: 300;
+$w-xlight: 100;

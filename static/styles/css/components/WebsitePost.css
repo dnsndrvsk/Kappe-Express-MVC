@@ -1,0 +1,14 @@
+.web-post {
+  background-color: #1ab5b3;
+  text-align: center; }
+  .web-post__inner-wrap {
+    padding: 40px 34px; }
+  .web-post__text {
+    margin: 0;
+    margin-bottom: 10px;
+    line-height: 20px;
+    color: #fff; }
+  .web-post__link {
+    font-style: italic;
+    color: #fff;
+    text-decoration: underline; }

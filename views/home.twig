@@ -1,0 +1,40 @@
+{% extends 'layout/base.twig' %}
+
+{% block ABC %}
+  <div class="home-page">
+    <ul class="home-page__items-list cf">
+      {% if cards %}
+        {% for card in cards %}
+          <li class="home-page__item card">
+            <img
+              class="card__image"
+              src={{card.source}}
+              alt={{card.title}}
+            />
+            <div class="card__descr-wrap">
+              <div class="card__descr-table">
+                <div class="card__descr-cell">
+                  <p class="card__title">
+                    {{card.title}}
+                  </p>
+                  <p class="card__type">
+                    {{card.type}}
+                  </p>
+                  <hr class="card__line" />
+                  <a
+                    class="card__btn"
+                    href="/work/{{card._id}}"
+                  >
+                    <i class="fa fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        {% endfor %}
+      {% else %}
+        {% include './partials/spinner.twig' %}
+      {% endif %}
+    </ul>
+  </div>
+{% endblock %}

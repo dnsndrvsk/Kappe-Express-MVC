@@ -1,0 +1,38 @@
+@import "../base/variables.scss";
+
+.quote-post {
+  text-align: center;
+  background-color: #242b2e;
+
+  &__inner-wrap {
+    padding: 30px;
+  }
+
+  &__text-wrap {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 21px;
+    line-height: 26px;
+    font-style: italic;
+    color: #fff;
+  }
+
+  &__author {
+    position: relative;
+    padding-top: 32px;
+    font-size: 18px;
+    line-height: 26px;
+    color: $blue;
+
+    i {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 20px;
+    }
+  }
+}

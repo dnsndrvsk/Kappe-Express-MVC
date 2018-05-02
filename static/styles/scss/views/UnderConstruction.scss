@@ -1,0 +1,152 @@
+@import '../base/variables.scss';
+
+.under-construct {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  animation: show-page .4s ease;
+  
+  &__wrap-inner {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #fff;
+  }
+  
+  &__header {
+    margin: 0;
+    line-height: 50px;
+  }
+  
+  i {
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+    font-size: 40px;
+    color: #fff;
+    transform: rotate(15deg);
+  }
+  
+  /* Added for demo purposes */
+  &__progress-wrap {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__progress{
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+  }
+
+  /* Usage examples start here */
+  &__stripes {
+    content: "";
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -ms-animation: none;
+    animation: none;
+    background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+    background: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+    background: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+    -webkit-background-size: 50px 50px;
+    -moz-background-size: 50px 50px;
+    background-size: 50px 50px;
+  }
+
+  &__progress {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px inset;
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px inset;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px inset;
+    position: relative;
+    background-color: lighten($blue, 5%);
+    height: 60px;
+    padding: 5px;
+    border-color: darken($blue, 5%);
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+  }
+  &__progress &__animate {
+    content: "";
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    -webkit-animation: big 3s linear infinite;
+    -moz-animation: big 3s linear infinite;
+    -ms-animation: big 3s linear infinite;
+    animation: big 3s linear infinite;
+    background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+    background: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+    background: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+    -webkit-background-size: 50px 50px;
+    -moz-background-size: 50px 50px;
+    background-size: 50px 50px;
+  }
+  &__progress > span {
+    -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0 2px 9px inset, rgba(0, 0, 0, 0.4) 0 -2px 6px inset;
+    -moz-box-shadow: rgba(255, 255, 255, 0.3) 0 2px 9px inset, rgba(0, 0, 0, 0.4) 0 -2px 6px inset;
+    box-shadow: rgba(255, 255, 255, 0.3) 0 2px 9px inset, rgba(0, 0, 0, 0.4) 0 -2px 6px inset;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background: #2ac052, -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(37%, #2ac052), color-stop(69%, #56f056));
+    background: #2ac052, -webkit-linear-gradient(center bottom, #2ac052 37%, #56f056 69%);
+    background: #2ac052, -moz-linear-gradient(center bottom, #2ac052 37%, #56f056 69%);
+    background: #2ac052, linear-gradient(center bottom, #2ac052 37%, #56f056 69%);
+  }
+
+
+  @-moz-keyframes big {
+    0% {
+      background-position: 0 0;
+    }
+
+    100% {
+      background-position: 50px 50px;
+    }
+  }
+
+  @-webkit-keyframes big {
+    0% {
+      background-position: 0 0;
+    }
+
+    100% {
+      background-position: 50px 50px;
+    }
+  }
+
+  @-ms-keyframes big {
+    0% {
+      background-position: 0 0;
+    }
+
+    100% {
+      background-position: 50px 50px;
+    }
+  }
+
+  @keyframes big {
+    0% {
+      background-position: 0 0;
+    }
+
+    100% {
+      background-position: 50px 50px;
+    }
+  }
+}
+

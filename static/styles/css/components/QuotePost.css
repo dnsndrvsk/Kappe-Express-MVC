@@ -1,0 +1,25 @@
+.quote-post {
+  text-align: center;
+  background-color: #242b2e; }
+  .quote-post__inner-wrap {
+    padding: 30px; }
+  .quote-post__text-wrap {
+    margin-bottom: 20px; }
+  .quote-post__text {
+    margin: 0;
+    font-size: 21px;
+    line-height: 26px;
+    font-style: italic;
+    color: #fff; }
+  .quote-post__author {
+    position: relative;
+    padding-top: 32px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #1ab5b3; }
+    .quote-post__author i {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 20px; }

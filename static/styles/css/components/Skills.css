@@ -1,0 +1,31 @@
+.skills__item {
+  margin-bottom: 20px; }
+  .skills__item:last-child {
+    margin-bottom: 0; }
+
+.skills__header {
+  margin: 0;
+  margin-bottom: 20px; }
+
+.skills__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 15px; }
+
+.skills__percent {
+  position: relative;
+  width: 100%;
+  height: 34px;
+  border: 1px solid #e3e3e3; }
+
+.skills__percent-line {
+  height: 100%;
+  background-color: #e3e3e3; }
+
+.skills__percent-num {
+  position: absolute;
+  top: -20px;
+  right: -10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #777; }

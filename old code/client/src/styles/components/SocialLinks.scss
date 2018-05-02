@@ -1,0 +1,94 @@
+@import "../base/variables.scss";
+
+.social-links {
+  text-align: right;
+
+  i {
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+  }
+
+  &__link {
+    display: inline-block;
+    vertical-align: top;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    border-radius: 3px;
+    overflow: hidden;
+    text-align: center;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--fli {
+      position: relative;
+      background-color: #0050c6;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 12px;
+        display: block;
+        background-color: #ff0099;
+      }
+
+      i {
+        position: relative;
+        z-index: 100;
+        font-size: 29px;
+        color: #fff;
+      }
+    }
+
+    &--gp {
+      background-color: #de6732;
+    }
+
+    &--twt {
+      background-color: #46caed;
+
+      i {
+        font-size: 17px;
+      }
+    }
+
+    &--prin {
+      background-color: #f43a2c;
+
+      i {
+        font-size: 18px;
+      }
+    }
+
+    &--drib {
+      background-color: #ff82cc;
+
+      i {
+        font-size: 17px;
+      }
+    }
+
+    &--beh {
+      background-color: #45c9ed;
+    }
+
+    &--fb {
+      position: relative;
+      background-color: #4569ae;
+
+      i {
+        position: absolute;
+        bottom: 0;
+        right: 3px;
+        font-size: 20px;
+        line-height: 14px;
+      }
+    }
+  }
+}

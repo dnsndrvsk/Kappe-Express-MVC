@@ -1,0 +1,52 @@
+{% extends 'layout/base.twig' %}
+
+{% set commentBoxCfg = {
+  header: 'Leave comment',
+  buttonText: 'Submit'
+} %}
+
+
+{% block ABC %}
+  <div class="work-page">
+    <div class="work-page__wrap-inner">
+      <div class="work-page__item-wrap">
+        <div class="work-page__item">
+          <img
+            class="work-page__image"
+            src={{card.source}}
+            alt={{card.title}}
+          />
+        </div>
+        <div class="work-page__item-desc">
+          <h1 class="work-page__header">
+            {{card.title}}
+          </h1>
+          <div class="work-page__info">
+            <div>
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </div>
+            {% if card.author %} {{card.author}} {% else %} Admin {% endif %}
+          </div>
+
+          <div class="work-page__info">
+            <div>
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+            </div>
+            {{card.date}}
+          </div>
+
+          <div class="work-page__info">
+            <div>
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+            </div>
+            {{card.date}}
+          </div>
+        </div>
+      </div>
+
+      {% include './partials/comments-box.twig' with {comments: card.comments} %}
+
+      {% include './partials/comment-box.twig' with {data: commentBoxCfg} %}
+    </div>
+  </div>
+{% endblock %}

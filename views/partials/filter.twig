@@ -1,0 +1,29 @@
+{% set tabs = [
+  'All Works',
+  'web design',
+  'illustration',
+  'photography',
+  'wallpapers',
+  'brochures'
+] %}
+
+
+
+<div class="filter">
+  <p class="filter__header">
+    Filter
+    <i class="fa fa-th-large"></i>
+  </p>
+  <ul class="filter__list">
+    {% for tab in tabs %}
+      <li class="filter__item">
+        <a
+          class="filter__link"
+          href="#"
+        >
+          {{tab}}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

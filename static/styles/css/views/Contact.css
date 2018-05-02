@@ -1,0 +1,37 @@
+.contact-page {
+  position: relative;
+  min-height: 100vh;
+  animation: show-page .4s ease; }
+  .contact-page__map {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0; }
+  .contact-page__form-box {
+    position: absolute;
+    top: 28px;
+    left: 28px;
+    width: 780px;
+    padding: 30px;
+    background-color: #fff; }
+    @media screen and (max-width: 870px) {
+      .contact-page__form-box {
+        position: relative;
+        top: 28px;
+        left: 28px;
+        width: auto;
+        margin-right: 58px; } }
+  .contact-page__descr {
+    margin-bottom: 28px;
+    padding-bottom: 30px;
+    border-bottom: solid 1px #e3e3e3; }
+  .contact-page__header {
+    margin: 0;
+    margin-bottom: 14px; }
+  .contact-page__text {
+    margin: 0; }
+  .contact-page .contacts-box {
+    position: absolute;
+    right: 0;
+    top: 0; }

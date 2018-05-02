@@ -1,0 +1,94 @@
+@import "../base/variables.scss";
+
+.common-post {
+    
+  &__image-wrap {
+
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+  }
+
+  &__video-wrap {
+
+  }
+
+  &__video {
+    display: block;
+    width: 100%;
+  }
+
+  &__gallery-wrap {
+
+  }
+
+  &__gallery-item {
+
+  }
+
+  &__info {
+    padding: 20px;
+    border-bottom: solid 1px $grey-l;
+  }
+
+  &__header {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 26px;
+
+    a {
+      color: #000;
+      font-weight: 300;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  &__bottom {
+    padding: 20px;
+  }
+
+  &__comments,
+  &__date {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    padding-left: 22px;
+    font-size: 13px;
+    color: $grey;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    i {
+      position: absolute;
+      color: $grey-d;
+    }
+  }
+
+  &__comments {
+    i {
+      left: 0;
+      top: 0;
+    }
+  }
+
+  &__date {
+    i {
+      left: 0;
+    }
+  }
+}

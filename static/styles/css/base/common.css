@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #c9c9c9; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #222;
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 100; }
+
+h1 {
+  font-size: 30px;
+  font-weight: 300; }
+
+h2, h3 {
+  font-size: 24px;
+  font-weight: 300; }
+
+p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #a3a3a3;
+  font-weight: 300; }
+
+figure {
+  margin: 0; }
+
+blockquote {
+  margin: 0; }
+
+iframe {
+  border: none; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+textarea {
+  border: none;
+  outline: none;
+  resize: vertical; }
+
+input {
+  border: none;
+  outline: none; }
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer; }
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #e3e3e3; }
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #e3e3e3; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #1ab5b3; }
+
+::selection {
+  background: #1ab5b3;
+  /* WebKit/Blink Browsers */
+  color: #fff; }
+
+::-moz-selection {
+  background: #1ab5b3;
+  /* Gecko Browsers */
+  color: #fff; }
+
+.cf:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.cf::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.page-content {
+  position: relative;
+  margin-left: 300px; }
+  @media (max-width: 1040px) {
+    .page-content {
+      margin-left: 0; } }
+
+.button {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #1ab5b3;
+  transition: background-color .3s ease, transform .1s; }
+  .button:hover {
+    background-color: #1dcbc9; }
+  .button:active {
+    transform: scale(0.99); }
+
+@keyframes show-page {
+  0% {
+    transform: translateY(-300px); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes jumping {
+  0% {
+    transform: translateY(-10px); }
+  50% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(-10px); } }
